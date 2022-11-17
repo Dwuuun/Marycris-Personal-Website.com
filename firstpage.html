@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Webpage</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div class="container">
+		<div class="listen">
+		<p>Play Music</p>
+		<img src="file:///C:/Users/EDWIN/Desktop/Sound%20webpage_img/Sound%20webpage_img/play.png" id="icon">
+	</div>
+
+	<audio id="mySong">
+
+		<source src="
+		file:///C:/Users/EDWIN/Music/songs/music-10.mp3">
+		 
+	</audio>
+
+	<script>
+		var mySong = document.getElementById("mySong");
+		var icon = document.getElementById("icon");
+
+		icon.onclick = function(){
+			if(mySong.paused){
+			mySong.play();
+			icon.src ="file:///C:/Users/EDWIN/Desktop/Sound%20webpage_img/Sound%20webpage_img/pause.png";
+		}else{
+			mySong.pause();
+			icon.src = "file:///C:/Users/EDWIN/Desktop/Sound%20webpage_img/Sound%20webpage_img/play.png";
+		}
+	}
+	</script>
+		<nav>
+
+
+			<ul>
+				<li><a href="home.html">Home</li>
+				<li><a href="about.html">About</li>
+				<li><a href="family.html">Family</li>
+				<li><a href="passion.html">Passion</li>
+				<li><a href="journey.html">Journey</li>
+				<li><a href="plan.html">Plan</li>
+				<li><a href="contact.html">Contact</li>
+
+			</ul>
+
+		</nav>
+
+
+		<section id="home">
+
+		<div class="main">
+
+			<h1 class="headings">I AM <br> MARYCRIS CASTRO </h1> 
+			</div>
+			<div class="main1">
+			<a href="CV.pdf" download class="btn">Download CV
+			<i class="fa fa-download"></i>
+		</a></div>
+		</div>
+	</div>
+
+
+	</section>
+</body>
+</html>
