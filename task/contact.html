@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Form</title>
+    <link rel="stylesheet" href="style4.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+
+       <div class="contact-form">
+          <div class="listen">
+      <p>Play Music</p>
+      <img src="file:///C:/Users/EDWIN/Desktop/Sound%20webpage_img/Sound%20webpage_img/play.png" id="icon">
+   </div>
+
+   <audio id="mySong">
+
+      <source src="file:///C:/Users/EDWIN/Music/songs/music-7.mp3" type="audio/mp3">
+       
+   </audio>
+
+   <script>
+      var mySong = document.getElementById("mySong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+         if(mySong.paused){
+         mySong.play();
+         icon.src ="file:///C:/Users/EDWIN/Desktop/Sound%20webpage_img/Sound%20webpage_img/pause.png";
+      }else{
+         mySong.pause();
+         icon.src = "file:///C:/Users/EDWIN/Desktop/Sound%20webpage_img/Sound%20webpage_img/play.png";
+      }
+   }
+   </script>
+        <h1>Contact Details</h1>
+      </div>
+       <div class="contact-section">
+      <div class="contact-info">
+        <div><i class="fas fa-map-marker-alt"></i>Address : Batasan Quezon City</div>
+        <div><i class="fas fa-phone"></i>Mobile : +639 762 149 803</div>
+        
+      </div>
+     <div class="wrapper">
+         <div class="button">
+            <div class="icon"><a href="https://www.facebook.com/castro.marycris11" target="_blank">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div>
+         <div class="button">
+            <div class="icon"><a href="https://twitter.com/Mcrixxe11" target="_blank">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+         </div>
+         <div class="button">
+            <div class="icon"><a href="https://www.instagram.com/yramsirc11/" target="_blank">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div>
+         <div class="button ">
+            <div class="icon"><a href="" target="_blank">
+               <i class="fa fa-envelope"></i>
+            </div>
+            <span>Gmail</span>
+         </div>
+         <div class="button">
+            <div class="icon"><a href="https://www.youtube.com/channel/UChN5LhXvvLSs9kQa6sABKSQ" target="_blank">
+               <i class="fab fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+
+         </div>
+
+      </div>
+     
+    
+  </body>
+</html>
+      
